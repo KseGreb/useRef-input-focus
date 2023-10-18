@@ -1,9 +1,12 @@
 
 
 
+https://github.com/KseGreb/useRef-input-focus/assets/110953599/b15ca388-440d-4cfc-a812-a97fade08bf6
 
 
-https://github.com/KseGreb/useRef-input-focus/assets/110953599/8650e114-b443-4186-a647-bc55724a2557
+
+
+
 
 # Getting Started with Create React App
 
