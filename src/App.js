@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
+import { useRef, useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [city, setCity] = useState("");
+  const inputRef = useRef();
+
+  const focus = () => {
+    inputRef.current.focus()
+  }
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <input 
+      ref={inputRef}
+      value={city} 
+      onChange={e => setCity(e.target.value)}/>
+    <p>I want to go to {city}</p>
+    <button onClick={focus}>Click here</button>
+
     </div>
   );
 }
